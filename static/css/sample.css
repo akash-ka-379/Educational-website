@@ -1,0 +1,147 @@
+.navbar-brand {
+  margin-right: 0; /* Remove default margin */
+}
+.navbar-nav {
+  flex-grow: 1; /* Fill remaining space in the middle */
+  justify-content: center; /* Center items in the middle */
+  
+}
+.d-inline-block{
+  width: 15px;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+
+}
+.background-image {
+  background-image: url('New folder/sch-tour-2048x1365.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 797px;
+}
+
+
+
+
+.navbar-nav .nav-item:hover .nav-link {
+  color: #007bff; /* Change the color to your desired hover color */
+}
+
+.carousel-item{
+  padding-top:0;
+}
+
+.card-body{
+  width: 150px;
+  margin-left: 200px;
+  margin-top: 70px;
+  border: 1px solid;
+  text-align: center;
+  background-color: lightsteelblue;
+  font-style: italic;
+  font-size: large;
+  
+}
+
+.card2-body{
+  width: 145px;
+  margin-left: 675px;
+  margin-top: -226px;
+  border: 1px solid;
+  text-align: center;
+  background-color: khaki;
+  font-style: italic;
+  font-size: large;
+  
+  
+}
+
+.card3-body{
+  width: 150px;
+  margin-left: 1134px;
+  margin-top: -237px;
+  border: 1px solid;
+  text-align: center;
+  background-color: lightblue;
+  font-style: italic;
+  font-size: large;
+ 
+}
+
+.card4-body{
+  width: 150px;
+  margin-left: 438px;
+  margin-top: 85px;
+  border: 1px solid;
+  text-align: center;
+  background-color: paleturquoise;
+  font-style: italic;
+  
+  
+
+}
+
+.card5-body{
+  width: 155px;
+  margin-left: 909px;
+  margin-top: -227px;
+  border: 1px solid;
+  text-align: center;
+  background-color: mistyrose;
+  font-style: italic;
+  font-size: large;
+  
+
+}
+
+.card-img{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  /* background-color: #f0f0f0; */
+  margin-top: 25px;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+  margin-left: 40px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-description {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+

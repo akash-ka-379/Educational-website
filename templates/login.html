@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link href="" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      overflow-y: hidden;
+      margin-top: 0;
+      margin-left: 0;
+    }
+    .registration-form {
+
+      border-radius: 10px;
+      /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+      padding: 110px;
+      width: 16%;
+      margin-left: 490px;
+      position: absolute;
+      margin-top: 20px;
+
+
+
+    }
+    .form-control {
+      border-radius: 20px;
+    }
+    .btn-register {
+      border-radius: 20px;
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-register:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+    .video{
+      position: fixed;
+      z-index: -1;
+    }
+    .form-group{
+      font-size: 40px;
+
+    }
+    input{
+      padding: 15px;
+      width: 300px;
+    }
+    select{
+      padding: 15px;
+      width: 330px;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="video">
+  <video autoplay loop muted><source src="{% static 'image/185096 (Original).mp4' %}"></video>
+</div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="text-center mb-4" style="font-size: 40px;margin-left: 650px; margin-top: 50px;position:absolute;">Login Form</h2>
+        <form class="registration-form" method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Username" name="username" required>
+          </div>
+
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" name="password" required>
+          </div>
+          <div class="form-group">
+              <input type="submit" value="Login" style="width:100px; margin-left:100px; border-radius:10px; background-color:skyblue;">
+          </div>
+          <p class="text-center">Not registered ?<a href="{% url 'register' %}"> register here</a></p>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
